@@ -77,8 +77,8 @@ int main(){
     }
     p1.initBooks();
     p2.initBooks();
-    log<<p1.getName()<<" starts with hand: "<< p1.showHand()<< " and books " << p1.showBooks() << endl;
-    log<<p2.getName()<<" starts with hand: "<< p2.showHand()<< " and books " << p2.showBooks() << endl<<endl;
+    log<<p1.getName()<<" starts with hand: "<< p1.showHand()<< " and books: " << p1.showBooks() << "." << endl;
+    log<<p2.getName()<<" starts with hand: "<< p2.showHand()<< " and books: " << p2.showBooks() << "." <<endl<<endl;
 
     bool terminate = (p1.getHandSize() == 0) && (p2.getHandSize() == 0) && (deck.size() == 0);
     while(!terminate){
