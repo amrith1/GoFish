@@ -65,3 +65,7 @@ bool Card::operator!=(const Card &rhs) const {
 string Card::toString() const {
     return rankString(myRank) + suitString(mySuit);
 }
+
+ostream &operator<<(ostream &out, const Card &c) {
+    out << c.toString();
+}
